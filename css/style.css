@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cabecalho div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho-icons, .cabecalho-logo{
+    font-size: 24px;
+}
+
+.cabecalho-logo {
+    color: #f44336;
+}
+
+.cabecalho-icons:nth-child(1){
+    color: #f44336;
+}
+
+.cabecalho-icons:nth-child(2){
+    color: gray;
+}

@@ -1,0 +1,134 @@
+@media screen and (max-width: 768px) {
+    .form-section {
+        height: 500px;
+    }
+
+    .cabecalho {
+        justify-content: space-evenly;
+    }
+
+    .container-div {
+        width: 200px;
+    }
+
+    .container-form {
+        width: 600px;
+    }
+
+    .container-form  form input {
+        width: 270px;
+    }
+
+    .explore-description {
+        margin-left: 20px;
+    }
+
+    .container-travel {
+        width: 350px;
+    }
+
+    .get-container {
+        width: 720px;
+    }
+
+    .contact-container {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .form-section {
+        background-image: none;
+        height: 300px;
+    }
+
+    .container-div {
+        width: 150px;
+    }
+
+    .container-form {
+        width: 450px;
+    }
+
+    .container-form  form input {
+        width: 200px;
+    }
+
+    .explore-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .container-travel {
+        width: 100%;
+    }
+
+    .get-offers-section {
+        padding: 0 20px;
+    }
+
+    .get-container {
+        width: 100%;
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .form-section {
+        background-image: none;
+        height: 300px;
+    }
+
+    .container-div {
+        width: 120px;
+    }
+
+    .container-form {
+        width: 360px;
+        padding: 30px;
+    }
+
+    .container-form  form input {
+        width: 140px;
+    }
+
+    .explore-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .container-travel {
+        width: 100%;
+    }
+
+    .get-offers-section {
+        padding: 0 10px;
+    }
+
+    .get-container {
+        width: 100%;
+    }
+
+    .contact-section {
+        padding: 10px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+}

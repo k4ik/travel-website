@@ -10,6 +10,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+main, footer {
+    background-color: rgb(245, 245, 245);
+}
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -132,7 +136,7 @@ body {
 
 .container-travel {
     width: 450px;
-    border: 1px solid rgba(128, 128, 128, 0.331);
+    background-color: #fff;
 
 }
 

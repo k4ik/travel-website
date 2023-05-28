@@ -110,3 +110,51 @@ body {
     width: 180px;
     text-align: center;
 }
+
+.explore-section {
+    padding: 70px 0;
+}
+
+.explore-description {
+    margin-left: 210px;
+    padding: 0 0 30px 0;
+}
+
+.explore-description h2{
+    margin-bottom: 30px;
+}
+
+.explore-container {
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+}
+
+.container-travel {
+    width: 450px;
+    border: 1px solid rgba(128, 128, 128, 0.331);
+
+}
+
+.container-travel img {
+    width: 100%;
+}
+
+.travel-description {
+    padding: 20px 10px;
+}
+
+.travel-description h3, .travel-description p {
+    margin-bottom: 20px;
+}
+
+.buy-btn {
+    padding: 10px;
+}
+
+.buy-btn a {
+    background-color: rgb(191, 191, 191);
+    padding: 5px 5px;
+    color: #000;
+    text-decoration: none;
+}

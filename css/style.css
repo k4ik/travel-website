@@ -158,3 +158,40 @@ body {
     color: #000;
     text-decoration: none;
 }
+
+.get-offers-section {
+    display: flex;
+    justify-content: center;
+}
+
+.get-container {
+    background-color: gray;
+    width: 930px;
+    padding: 20px;
+    color: #fff;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-form input {
+    width: 100%;
+    height: 30px;
+}
+
+.get-container h2, .get-container p {
+    padding-bottom: 20px;
+}
+
+.sub-btn {
+    margin-top: 20px;
+}
+
+.get-container a{
+    background-color: rgb(167, 48, 48);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}

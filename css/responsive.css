@@ -51,7 +51,7 @@
     }
 
     .container-form {
-        width: 450px;
+        width: 100%;
     }
 
     .container-form  form input {
@@ -95,21 +95,25 @@
     }
 
     .container-div {
-        width: 120px;
+        width: 106px;
     }
 
     .container-form {
-        width: 360px;
+        width: 100%;
         padding: 30px;
     }
 
     .container-form  form input {
-        width: 140px;
+        width: 120px;
     }
 
     .explore-container {
         flex-direction: column;
         padding: 0 10px;
+    }
+
+    .explore-description {
+        margin-left: 10px;
     }
 
     .container-travel {

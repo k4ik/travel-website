@@ -36,7 +36,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 425px){
     .cabecalho {
         justify-content: space-between;
     }
@@ -47,7 +47,7 @@
     }
 
     .container-div {
-        width: 150px;
+        width: 140px;
     }
 
     .container-form {
@@ -55,7 +55,56 @@
     }
 
     .container-form  form input {
-        width: 200px;
+        width: 150px;
+    }
+
+    .explore-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .container-travel {
+        width: 100%;
+    }
+
+    .get-offers-section {
+        padding: 0 20px;
+    }
+
+    .get-container {
+        width: 100%;
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .form-section {
+        background-image: none;
+        height: 300px;
+    }
+
+    .container-div {
+        width: 125px;
+    }
+
+    .container-form {
+        width: 100%;
+    }
+
+    .container-form  form input {
+        width: 150px;
     }
 
     .explore-container {

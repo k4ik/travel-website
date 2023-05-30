@@ -45,7 +45,8 @@ main, footer {
 .form-section {
     background-image: url('../img/london.jpg');
     background-repeat: no-repeat;
-    background-position: cover;
+    background-position: center;
+    background-size: cover;
     height: 600px;
 
     display: flex;
@@ -120,12 +121,14 @@ main, footer {
 }
 
 .explore-description {
-    margin-left: 210px;
-    padding: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .explore-description h2{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .explore-container {

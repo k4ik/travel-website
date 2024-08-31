@@ -5,131 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanderlust Travels</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="description" content="Welcome to Wanderlust Travels, your ultimate online destination for all things related to travel and exploration. Whether you're a seasoned globetrotter or a first-time adventurer, our website is designed to inspire, inform, and assist you in planning your dream vacations. With a vast array of destinations, travel tips, and personalized recommendations, we aim to make your travel experience seamless and unforgettable.">
     <meta name="author" content="k4ik">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/style/style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <header class="cabecalho">
-        <div>
-            <i class="ph-fill ph-map-pin cabecalho-icons"></i>
-            <p class="cabecalho-logo">Logo</p>
-        </div>
-        <i class="ph-fill ph-magnifying-glass cabecalho-icons"></i>
+    <header class="header">
+        <nav>
+            <i class="ph-fill ph-map-pin"></i>
+            <a href="#" class="logo">Logo</a>
+        </nav>
+        <form class="search-form" role="search">
+            <input type="search" placeholder="Search..." id="searchInput" aria-label="Search">
+            <button type="submit" aria-label="Search" onclick="search(event)">
+                <i class="ph-fill ph-magnifying-glass"></i>
+            </button>
+        </form>
     </header>
     <main>
         <section class="form-section">
             <div class="container">
-                <div class="container-div">
+                <div class="service-card clickable" data-content="flight">
                     <i class="ph-fill ph-airplane-tilt"></i>
                     <p>Flight</p>
                 </div>
-                <div class="container-div">
+                <div class="service-card clickable" data-content="hotel">
                     <i class="ph-fill ph-bed"></i>
                     <p>Hotel</p>
                 </div>
-                <div class="container-div">
+                <div class="service-card clickable" data-content="rental">
                     <i class="ph-fill ph-car"></i>
                     <p>Rental</p>
                 </div>
             </div>
-            <div class="container-form">
+            <div id="container-form" class="form-container">
                 <p>Travel the world with us</p>
-                <form>
-                    <div>
-                        <label for="from">From</label>
-                        <input type="text" id="from" name="from" placeholder="Departing from">
-                    </div>
-                    <div>
-                        <label for="to">To</label>
-                        <input type="text" id="to" name="to" placeholder="Arriving at">
-                    </div>
-                </form>
-                <a href="#" class="seach-button">Seach and find dates</a>
+                <form id="form"></form>
+                <a href="#" class="cta-button">Search and find dates</a>
             </div>
         </section>
+    
         <section class="explore-section">
             <div class="explore-description">
                 <h2>Explore Nature</h2>
                 <p>Travel with us and see nature at its finest</p>
             </div>
             <div class="explore-container">
-                <div class="container-travel">
-                    <img src="img/ocean.jpg" alt="ocean">
+                <article class="travel-card">
+                    <img src="assets/images/ocean.jpg" alt="Ocean view">
                     <div class="travel-description">
-                        <div>
-                            <h3>West Coast, Norway</h3>
-                            <p>Roundtrip from $79</p>
-                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                        </div>
-                        <div class="buy-btn">
-                            <a href="#">Buy Tickets</a>
-                        </div>
+                        <h3>West Coast, Norway</h3>
+                        <p>Roundtrip from $79</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                        <a href="#" class="buy-btn">Buy Tickets</a>
                     </div>
-                </div>
-                <div class="container-travel">
-                    <img src="img/mountains.jpg" alt="mountains">
+                </article>
+                <article class="travel-card">
+                    <img src="assets/images/mountains.jpg" alt="Mountain view">
                     <div class="travel-description">
-                        <div>
-                            <h3>Mountains, Austria</h3>
-                            <p>One-way from $39</p>
-                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                        </div>
-                        <div class="buy-btn">
-                            <a href="#">Buy Tickets</a>
-                        </div>
+                        <h3>Mountains, Austria</h3>
+                        <p>One-way from $39</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                        <a href="#" class="buy-btn">Buy Tickets</a>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
-        <section class="get-offers-section">
-            <div class="get-container">
+        <section class="offers-section">
+            <div class="offers-container">
                 <h2>Get the best offers first!</h2>
                 <p>Join our newsletter</p>
-                <form>
-                    <div class="email-form">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email Address">
-                    </div>
+                <form class="newsletter-form">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
                 </form>
-                <div class="sub-btn"><a href="#">Subscribe</a></div>
             </div>
         </section>
         <section class="contact-section">
             <div class="contact-container">
-                <h2 class="contact-title">Contact</h2>
-                <p class="contact-desc">Let us book your next trip!</p>
-                <div>
-                    <div class="contact-div">
+                <h2>Contact</h2>
+                <p>Let us book your next trip!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
                         <i class="ph-fill ph-map-pin"></i>
                         <p>Chicago, US</p>
                     </div>
-                    <div class="contact-div">
+                    <div class="contact-item">
                         <i class="ph-fill ph-phone"></i>
                         <p>Phone: +00 151515</p>
                     </div>
-                    <div class="contact-div">
+                    <div class="contact-item">
                         <i class="ph-fill ph-envelope"></i>
                         <p>Email: mail@mail.com</p>
                     </div>
                 </div>
-                <form>
-                    <input type="text" name="" id="" placeholder="Name">
-                    <input type="email" name="" id="" placeholder="Email">
-                    <input type="text" name="" id="" placeholder="Message">
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="message-btn">SEND MESSAGE</button>
                 </form>
-                <div class="message-btn">
-                    <a href="#">SEND MESSAGE</a>
-                </div>
             </div>
         </section>
     </main>
+
     <footer>
         <p>Find Us On</p>
-        <div>
+        <div class="social-icons">
             <i class="ph-fill ph-facebook-logo"></i>
             <i class="ph-fill ph-instagram-logo"></i>
             <i class="ph-fill ph-snapchat-logo"></i>
@@ -138,5 +123,8 @@
             <i class="ph-fill ph-linkedin-logo"></i>
         </div>
     </footer>
+
+    <script src="assets/scripts/home.js"></script>
+    <script src="assets/scripts/search.js"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@
     </header>
     <main>
         <section class="form-section">
-            <div class="container">
+            <div class="container fade-up">
                 <div class="service-card clickable" data-content="flight">
                     <i class="ph-fill ph-airplane-tilt"></i>
                     <p>Flight</p>
@@ -40,21 +40,21 @@
                     <p>Rental</p>
                 </div>
             </div>
-            <div id="container-form" class="form-container">
+            <div id="container-form" class="form-container fade-up">
                 <p>Travel the world with us</p>
                 <form id="form"></form>
                 <a href="#" class="cta-button">Search and find dates</a>
             </div>
         </section>
     
-        <section class="explore-section">
+        <section class="explore-section fade-up">
             <div class="explore-description">
                 <h2>Explore Nature</h2>
                 <p>Travel with us and see nature at its finest</p>
             </div>
             <div class="explore-container">
-                <article class="travel-card">
-                    <img src="assets/images/ocean.jpg" alt="Ocean view">
+                <article class="travel-card fade-up">
+                    <img src="assets/images/ocean.jpg" alt="Ocean view" loading="lazy">
                     <div class="travel-description">
                         <h3>West Coast, Norway</h3>
                         <p>Roundtrip from $79</p>
@@ -62,8 +62,8 @@
                         <a href="#" class="buy-btn">Buy Tickets</a>
                     </div>
                 </article>
-                <article class="travel-card">
-                    <img src="assets/images/mountains.jpg" alt="Mountain view">
+                <article class="travel-card fade-up">
+                    <img src="assets/images/mountains.jpg" alt="Mountain view" loading="lazy">
                     <div class="travel-description">
                         <h3>Mountains, Austria</h3>
                         <p>One-way from $39</p>
@@ -73,7 +73,7 @@
                 </article>
             </div>
         </section>
-        <section class="offers-section">
+        <section class="offers-section fade-up">
             <div class="offers-container">
                 <h2>Get the best offers first!</h2>
                 <p>Join our newsletter</p>
@@ -84,7 +84,7 @@
                 </form>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section fade-up">
             <div class="contact-container">
                 <h2>Contact</h2>
                 <p>Let us book your next trip!</p>
@@ -112,7 +112,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="fade-up">
         <p>Find Us On</p>
         <div class="social-icons">
             <i class="ph-fill ph-facebook-logo"></i>
@@ -126,5 +126,19 @@
 
     <script src="assets/scripts/home.js"></script>
     <script src="assets/scripts/search.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+
+    </script>
 </body>
 </html>
